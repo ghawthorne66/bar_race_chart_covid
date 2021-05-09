@@ -16,7 +16,7 @@ class barChartRace {
             {y: 577, text: '#10'}
         ];
         this.tickDuration = options.tickDuration || 1500;
-        this.delayDuration = options.delayDuration || 1500; //4000
+        this.delayDuration = options.delayDuration || 3000;
         this.top = options.top || 10;
         this.height = options.height || 600;
         this.width = options.width || 1366 - 80;
@@ -189,7 +189,7 @@ class barChartRace {
             .attr('height', 20)
             .attr('x', -35)
             .attr('y', 3)
-            //.attr('xlink:href', d => `https://disease.sh/assets/img/flags/${d.code}.png`)
+            // .attr('xlink:href', d => `https://disease.sh/assets/img/flags/${d.code}.png`)
             .attr("xlink:href", d => d.img)
 
         labels
